@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+#logo {
+  margin: 10px 20px;
+}
+
+#logo img {
+  height: 30px;
+  margin: 3px 4px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
+
+#navbar ul li {
+  list-style-type: none;
+  font-size: 1.8rem;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#navbar ul li a:hover {
+  background-color: #fcf3f3;
+  color: black;
+}
+/* Home css */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 435px;
+}
+#home::before {
+  content: "";
+  background: url(../images/vegetables-1085063_1920.jpg) no-repeat center
+    center/cover;
+  height: 72%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+}
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+}
+/*services */
+#services {
+  display: flex;
+  margin: 34px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background: #b8a4a4;
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+/*Clients section */
+#client-section {
+  height: 340px;
+  /* position: absolute; */
+  /* border: 2px solid yellow; */
+}
+
+#client-section::before {
+  content: "";
+  background: url("../images/logo.jpg");
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+#client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+}
+#client img {
+  height: auto;
+}
+/* contact */
+#contact-section {
+  position: relative;
+}
+#contact-section::before {
+  content: "";
+  background: url("../images/cookies-2991174_1920.jpg") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  position: absolute;
+}
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+}
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Class */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  color: black;
+}
+.h-secondary {
+  font-size: 1.3rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border-radius: 10px;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.center {
+  text-align: center;
+}
